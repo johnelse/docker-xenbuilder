@@ -27,3 +27,4 @@ RUN    yum install -y \
 RUN    useradd builder
 RUN    echo "builder:builder" | chpasswd
 RUN    echo "builder ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers
+RUN    usermod -G mock builder
