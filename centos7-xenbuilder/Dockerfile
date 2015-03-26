@@ -11,6 +11,7 @@ RUN    yum install -y \
            make \
            mercurial \
            mock \
+           python-argcomplete \
            python-argparse \
            python-setuptools \
            rpm-build \
