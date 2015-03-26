@@ -14,12 +14,14 @@ RUN    yum install -y \
            python-argcomplete \
            python-argparse \
            python-setuptools \
+           redhat-lsb-core \
            rpm-build \
            rpm-python \
            sudo
 
 # Niceties
 RUN    yum install -y \
+           tig \
            tmux \
            vim \
            wget
