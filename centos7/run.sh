@@ -1,3 +1,3 @@
 #!/bin/sh
 
-docker run --privileged -t -i --rm johnelse/centos7-xenbuilder:latest "$@"
+docker run --privileged -t -i --rm centos7-xenbuilder:latest "$@"
