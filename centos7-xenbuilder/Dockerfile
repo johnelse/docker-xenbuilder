@@ -19,6 +19,10 @@ RUN    yum install -y \
            rpm-python \
            sudo
 
+# Install planex.
+RUN    yum -y install https://xenserver.github.io/planex-release/unstable/rpm/el/planex-unstable-7-1.noarch.rpm
+RUN    yum -y install planex
+
 # Niceties
 RUN    yum install -y \
            tig \
