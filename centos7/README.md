@@ -26,3 +26,15 @@ cd buildroot
 ./configure
 make
 ```
+
+Maybe you want to make modifications to one of the components, e.g. xapi.
+
+```
+cd ..
+git clone git://github.com/xapi-project/xen-api
+cd xen-api
+...make modifications here...
+cd ../buildroot
+planex-pin SPECS/xapi.spec /home/builder/xen-api#master
+make
+```
