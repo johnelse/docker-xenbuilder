@@ -36,5 +36,5 @@ cd xen-api
 ...make modifications here...
 cd ../buildroot
 planex-pin SPECS/xapi.spec /home/builder/xen-api#master
-make
+MOCK="planex-cache -v" make
 ```
